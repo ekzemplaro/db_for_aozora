@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<link href="ekimae_ryokuka.css" rel="stylesheet" />
+<title>DB for 青空文庫 (Jun/28/2015)</title>
+</head>
+<body>
+
+<h2>DB for 青空文庫</h2>
+
+JSON を、jQuery で表示しています。<p />
+
+
+<ul>
+<li><a href="./persons">著者、翻訳者</a></li>
+<blockquote>
+<a href="http://www.aozora.gr.jp/index_pages/person_all.html">作家リスト</a>
+からダウンロードしたlist_person_all_extended_utf8.csv を元に作成しました。<p />
+</blockquote>
+
+<li><a href="./workers">工作員</a></ili>
+<blockquote>
+<a href="https://github.com/aozorahack/pubserver">pubserver</a> 
+の情報に基づいて、MongoDB に取り込んだものを、JSON に変換しました。<p />
+pubserver は、次のAPIでデータを取得しています。<p />
+<blockquote>
+http://reception.aozora.gr.jp/pidlist.php?page=1&pagerow=-1<p />
+http://reception.aozora.gr.jp/widlist.php?page=1&pagerow=-1<p />
+</blockquote>
+
+</blockquote>
+
+<li><a href="./in_progress">作業中の作品</a></li>
+<blockquote>
+<a href="http://www.aozora.gr.jp/index_pages/person_inp_all.html">
+作業中 作家リスト</a>
+からダウンロードした list_inp_person_all_utf8.csv を元に作成しました。<p />
+</blockquote>
+
+
+<li><a href="./public_works">公開中 作品リスト</a></li>
+
+</ul>
+
+
+同様のリストは、<a href="http://reception.aozora.gr.jp/idlist.html">こちら</a>にあります。<p />
+
+<blockquote>
+http://reception.aozora.gr.jp/idlist.html<p />
+</blockquote>
+<hr />
+青空文庫には、次のような API があります。<p />
+<blockquote>
+http://reception.aozora.gr.jp/pidlist.php?key=あ<p />
+http://reception.aozora.gr.jp/widlist.php?key=あ<p />
+</blockquote>
+</ul>
+
+<hr />
+Jun/28/2015<br />
+</body>
+</html>
